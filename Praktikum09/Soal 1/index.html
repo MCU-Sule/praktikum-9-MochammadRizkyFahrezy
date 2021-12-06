@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="author" content="Rizky Fahrezy 2172018">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola Angka</title>
+</head>
+<body>
+<style>
+    div {
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        background-color: cornflowerblue;
+        margin: auto;
+        float: left;
+        text-align: center;
+    }
+</style>
+<body>
+    <div>
+    <script>
+        let inpt = prompt("Berapa NxN bola yang ingin dibuat:");
+        let k = inpt*inpt;
+        for (let i = 0; i < inpt; i++) {
+            for (let j = 0; j < inpt; j++) {
+                k++;
+                document.write("<div>" + k + "</div>");
+            }
+            document.write("<br><br><br>");
+        }
+    </script>
+    </div>
+</body>

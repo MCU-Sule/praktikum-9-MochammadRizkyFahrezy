@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="author" content="Rizky Fahrezy 2172018">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola Angka</title>
+</head>
+<style>
+    table {
+        border: 1px solid black;
+    }
+    tr {
+        border: 1px solid black;
+    }
+    td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+<script>
+    const data = [];
+    const kelompok = [];
+    var jmlh = 0;
+    while(true) {
+        var nama = prompt("Masukan nama");
+        if(nama == "stop"){
+            break;
+        }
+        var warna = prompt("Masukan warna");
+        jmlh++;
+        data.push(nama);
+    kelompok.push(warna);
+    }
+     
+    let cari = prompt("Masukan warna yang ingin dicari");
+    document.write("<table>");
+    document.write("<tr>");
+    document.write("<td> Nama </td>");
+    document.write("<td> Warna Kesukaan </td>");
+    document.write("</tr>");
+    for(let i=0;i<jmlh;i++){
+    document.write("<tr>");
+    document.write("<td>"+ data[i] + " </td>");
+    document.write("<td>"+ kelompok[i] + " </td>");
+     document.write("</tr>");
+    }
+    document.write("</table>")
+    let orang = "" 
+    for(let i = 0;i<jmlh;i++){
+        suka+=data[i]
+    }
+    if(cari == kelompok){
+
+    }
+</script>
